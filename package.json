@@ -1,0 +1,13 @@
+{
+  "name": "sentinel",
+  "version": "0.0.1",
+  "description": "Watches a folder and does things when criteria is met",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "dependencies": {
+    "node-watch": "^0.6.0"
+  }
+}
