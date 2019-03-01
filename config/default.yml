@@ -1,0 +1,4 @@
+# Configuration for Sentinel file transaction processor
+watch:
+  folder: d:/ftp-root
+  interval: 100

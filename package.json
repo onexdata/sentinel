@@ -1,13 +1,17 @@
 {
   "name": "sentinel",
-  "version": "0.0.1",
-  "description": "Watches a folder and does things when criteria is met",
+  "version": "0.5.1",
+  "description": "Monitors folders for changes and processes them accordingly",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/onexdata/sentinel.git"
   },
-  "author": "",
+  "author": "Nick Steele",
   "dependencies": {
-    "node-watch": "^0.6.0"
+    "chokidar": "^2.1.2",
+    "config": "^3.0.1",
+    "js-yaml": "^3.12.2",
+    "yauzl": "^2.10.0"
   }
 }
