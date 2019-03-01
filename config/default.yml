@@ -1,4 +1,10 @@
 # Configuration for Sentinel file transaction processor
+debug: '*'
 watch:
-  folder: d:/ftp-root
-  interval: 100
+  folder: c:/ftproot/client_upload
+output:
+  folder: c:/ftproot/output
+convert:
+  executable: c:\EMS\Export_Engine\EMSEEC.exe
+  format: tsv
+  database: sqltest

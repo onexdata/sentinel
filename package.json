@@ -3,14 +3,19 @@
   "version": "0.5.1",
   "description": "Monitors folders for changes and processes them accordingly",
   "main": "index.js",
+  "scripts": {
+    "start": "supervisor ."
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/onexdata/sentinel.git"
   },
   "author": "Nick Steele",
   "dependencies": {
+    "@acter/supervisor": "^1.0.4",
     "chokidar": "^2.1.2",
     "config": "^3.0.1",
+    "csvtojson": "^2.0.8",
     "js-yaml": "^3.12.2",
     "yauzl": "^2.10.0"
   }
