@@ -1,0 +1,1 @@
+const gateway = require('@acter/gateway')

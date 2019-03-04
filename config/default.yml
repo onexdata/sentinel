@@ -1,10 +1,25 @@
-# Configuration for Sentinel file transaction processor
-debug: '*'
-watch:
-  folder: c:/ftproot/client_upload
-output:
-  folder: c:/ftproot/output
-convert:
-  executable: c:\EMS\Export_Engine\EMSEEC.exe
-  format: tsv
-  database: sqltest
+# Configuration for @acter/gateway...
+reactor:
+  server:
+    debug: 'acter:*'
+    port: 9001
+    persistence: 'mysql://root:pass@localhost/eps'
+    statics:
+      active: true
+    watch:
+      active: true
+      folder: c:/ftproot/client_upload
+      report: src/watcher.js
+  services:
+    definitions:
+      alert:
+        options:
+          nothing: true
+      transaction:
+        model: transaction
+        auto: true
+# Configuration for Application...
+app:
+  archive: c:/ftproot/archive
+  executable: c:/EMS/Export_Engine/EMSEEC.exe
+  schema: src/schemas/transaction.json

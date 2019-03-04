@@ -1,0 +1,1 @@
+## This is the UI for Sentinel - for remote management.
